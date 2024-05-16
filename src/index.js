@@ -3,18 +3,52 @@
 //  Newer: querySelector, querySelectorAll
 //  Select the following single elements from the div.card
 
+/* 
+    *MY NOTES*
+*Older Method*  
+const mainNav = document.getElementById("mainNav");
+const divElems = document.getElementsByTagName("div");
+const cardElems = document.getElementsByClassName("card")
+
+    *Newer Method*
+const queryMainNav = document.querySelector("#mainNav");
+const queryDivElems = document.querySelectorAll("div");
+const queryCardElems = document.querySelectorAll(".card");
+
+
+console.log( "Successful!!")
+*/
 // A- finding across the entire DOM
-const header = null
-const logoTitle = null
-const firstCard = null
+const header = document.querySelector("header");
+console.log(header);
+
+const logoTitle = document.querySelector("#logoTitle");
+console.log(logoTitle);
+
+const firstCard = document.querySelector(".card");
+console.log(firstCard); 
+
 // B- finding within one particular element
-const imageFirstCard = null
-const titleFirstCard = null
-const subtitleFirstCard = null
-const textFirstCard = null
+const imageFirstCard = firstCard.querySelector("img");
+console.log(imageFirstCard);
+
+const titleFirstCard = firstCard.querySelector("h2");
+console.log(titleFirstCard);
+
+const subtitleFirstCard = firstCard.querySelector("h3");
+console.log(subtitleFirstCard);
+
+const textFirstCard = firstCard.querySelector("p");
+console.log(textFirstCard);
+
+
 // C- traversing with dot notation
-const link1FirstCard = null
-const link2FirstCard = null
+const link1FirstCard = textFirstCard.nextElementSibling;
+console.log(link1FirstCard);
+
+const link2FirstCard = link1FirstCard.nextElementSibling;
+console.log(link2FirstCard);
+
 
 
 // 👉 2- Finding collections of elements in the DOM
