@@ -86,6 +86,11 @@ const homelink = linksArr.find(link => linktextContent === "Home")
 
 // 👉 3- Changing an element's text content
 //  A- Change the cat-related content into dog-related content
+    logoTitle.textContent = "Bloomtech K9s";
+    titleFirstCard.textContent = "DOGGO Community!";
+    subtitleFirstCard.textContent = "Expansion pass on Doggo tales";
+    textFirstCard.textContent = "Dogs are love, sent from above, extra gloves for the hands of love!";
+    link2FirstCard.textContent = "Dog Paradise!";
 //  B- Have the students research online the difference between textContent and innerText
 
 
