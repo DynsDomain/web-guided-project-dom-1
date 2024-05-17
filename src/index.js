@@ -75,7 +75,7 @@ return newArr;
 // C- Turn the collection of links into a real array
 const linksArr = Array.from(links);
 // D- Use .filter to find the anchor tag with the textContent of "Home"
-const homelink = linksArr.find(link => linktextContent === "Home")
+const homelink = linksArr.find(link => link.textContent === "Home")
 /*
 - find => returns the first element which passes the condition, meets the criteria.
 - filter => returns all elements which pass condition
@@ -97,12 +97,16 @@ const homelink = linksArr.find(link => linktextContent === "Home")
 // 👉 4- Changing any property
 //  A- Using dot notation to change a few attributes
 //  B- Using .setAttribute to change a few attributes
-
+link1FirstCard.setAttribute("href","https://pexels.com/search/dog");
+link2FirstCard.href = "https://doggoipsum.com/";
+imageFirstCard.src = "https://i.pinimg.com/474x/80/06/4a/80064a953ff89afe01fe9416980b531e.jpg";
+logoTitle.className = "logo heading banana";
 
 // 👉 5- Changing the styling of an element
 //  A- By changing the class names on the element with the classList API
+header.classList.add("sky");
 //  B- By manipulating inline styles on the element
-
+header.style.fontSize = "4em";
 
 // 👉 6- Creating new elements from scratch and appending them
 // Create a new link inside the nav for "Blog"
