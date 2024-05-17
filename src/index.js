@@ -119,6 +119,31 @@ document.querySelector("nav").appendChild(blogLink);
 // 👉 7- Making a copy of the card and appending it to the card group
 // DOM nodes can only exist in one spot in the DOM
 // We cannot append the same copy multiple times
+const secondCard = firstCard.cloneNode(true);
+
+document.querySelector(".card-group").appendChild(secondCard);
+header.remove();
+document.body.prepend(header);
+
+const data = {
+    "contact": {
+     "contact-heading" : "Contact",
+     "address" : "123 Paradise road, Chicago Illinois, USA",
+     "phone" : "1(800) 000 0000",
+     "email" : "paradiselanw@gmail.com",   
+    }
+}
+
+
+const contactHeading= document.querySelector(".contact-heading");
+const address = document.querySelector(".address");
+const phone = document.querySelector(".phone");
+const email = document.querySelector(".email");
+
+contactHeading.textContent = data["contact"]["contact-heading"];
+address.textContent = data["contact"]["address"];
+phone.textContent = data["contact"]["phone"];
+email.textContent = data["contact"]["email"];
 
 
 // 👉 8- Removing an existing element and putting it back [STRETCH if time allows]
