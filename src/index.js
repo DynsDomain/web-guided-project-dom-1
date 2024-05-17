@@ -110,7 +110,11 @@ header.style.fontSize = "4em";
 
 // 👉 6- Creating new elements from scratch and appending them
 // Create a new link inside the nav for "Blog"
-
+const blogLink = document.createElement("a");//THIS HAS TO BE A DOM TAG!
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+blogLink.classList.add("menu-item")
+document.querySelector("nav").appendChild(blogLink);
 
 // 👉 7- Making a copy of the card and appending it to the card group
 // DOM nodes can only exist in one spot in the DOM
