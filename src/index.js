@@ -53,9 +53,35 @@ console.log(link2FirstCard);
 
 // 👉 2- Finding collections of elements in the DOM
 // A- Find all the anchor tags inside the nav element
+const links = document.querySelectorAll("nav a");
+console.log(links);
 // B- Loop over the links and console.log their text content
+links.forEach(link => console.log(link.textContent));
+
+/*
+ links.forEach(function(link) {
+    console.log(link.textContent); 
+  
+links.forEach(link => console.log(link.textContent);
+ 
+
+for (let i = 0; i < links.length; i++) {
+    newArr.push(links[i]);
+
+}
+return newArr;
+  */
+
 // C- Turn the collection of links into a real array
+const linksArr = Array.from(links);
 // D- Use .filter to find the anchor tag with the textContent of "Home"
+const homelink = linksArr.find(link => linktextContent === "Home")
+/*
+- find => returns the first element which passes the condition, meets the criteria.
+- filter => returns all elements which pass condition
+- map => make some update to all elements of the array
+- reduce => reduce the array to a singualr value
+*/
 
 
 // 👉 3- Changing an element's text content
